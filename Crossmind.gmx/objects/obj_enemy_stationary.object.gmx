@@ -25,7 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>shooting --;
+            <string>if(life &lt;= 0)
+{
+instance_destroy()
+}
+shooting --;
 if(shooting &lt;= 0)
 {
 bullet1 = instance_create(x,y,obj_enemy_fireball);
